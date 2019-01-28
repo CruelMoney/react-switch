@@ -15,14 +15,24 @@ export default class BasicExample extends Component {
 	render() {
 		return (
 			<div className="example">
-				<h2>Simple usage</h2>
+				<h2>Long label usage</h2>
 				<label htmlFor="normal-switch">
 					<span>Switch with default style</span>
 					<Switch
 						onChange={this.handleChange}
 						checked={this.state.checked}
+						width={380}
+						handlePill
+						height={65}
+						leftLabel="FULL PROGRAM"
+						rightLabel="MY PROGRAM"
 						className="react-switch"
 						id="normal-switch"
+						onHandleColor="#03A3DB"
+						offHandleColor="#03A3DB"
+						labelStyle={{
+							color: "white"
+						}}
 					/>
 				</label>
 				<p>
